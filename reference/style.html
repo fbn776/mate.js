@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../style.css">
+<style>
+
+</style>
+</head>
+<body>
+ <div class="heading"><a href="../reference.html"><</a>Style</div><br>
+<div class="main">
+ <div class="title">theme(style)</div><br>
+  <div class="des">
+  This is an optional function that makes your workflow much faster.
+  This style parameter takes in an object of<br>primary color (p) <br>secondary color (s) <br> text color (c) <br>font type (font) <br>border color (border)<br>
+  And makes a theme out of these and apply it to the html
+  </div>
+  <br>
+  <div class="code">
+    var style={<br>
+     p:"#212121",<br>
+     s:"#424242",<br>
+     c:"white",<br>
+     font:"monospace",<br>
+     border:"white"<br>
+    }<br>
+    theme(style);
+  </div><br>
+  <div class="note">
+   This is meant for fast purposes
+  </div>
+</div><br>
+<div class="main">
+<div class="title">applyStyle(element,style)</div><br>
+<div class="des">
+ This is a fast way of applying styles or class or text or onclick etc to an element
+</div>
+<br>
+<div class="code">
+var elm=element("#hello");<br>
+ var style={<br>
+  backgroundColor:"red",<br>
+  color:"white",<br>
+  text:"hello",<br>
+  onclick:function(){<br>
+   alert("hello");<br>
+  }<br>
+ }<br>
+ 
+ applyStyle(elm,style)<br>
+ <c>/*This applys the style as specified in the style object to the element of id hello*/</c>
+</div><br>
+<div class="note">
+Not all css styles are added to it only the important ones
+</div>
+</div><br>
+
+<script>
+var img=element("img");
+
+</script>
+</body>
+</html>
