@@ -1,0 +1,7 @@
+Name:Mate.js;
+Developer:fbn776;
+On:14/12/19;
+
+About:Mate.js is JavaScript libary
+that simplify your workflow. It is
+a friendly libary;
