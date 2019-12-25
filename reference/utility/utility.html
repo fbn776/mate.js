@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../style.css">
+<style>
+
+</style>
+</head>
+<body>
+ <div class="heading"><a href="../reference.html"><</a>Utility</div><br>
+<div class="main">
+ <div class="title">element(name)</div><br>
+  <div class="des">This function returns the element that is specified in the bracket. To choose a. element use the element's CSS selector</div>
+  <br>
+  <div class="code">
+  var elm;<br>
+   elm=document.getElementsByClassName(".container");<br>
+   <c>/* You can use this instead of the standard one */</c>
+    elm=element(".container");<br>
+  </div><br>
+  <div class="note">
+   This function only returns a single element
+  </div>
+</div><br>
+
+<div class="main">
+ <div class="title">elements(name,n)</div><br>
+  <div class="des">
+   This function returns the element from a group of elements with the specified index number
+  </div>
+  <br>
+  <div class="code">
+   var elm=elements("div",4);<br>
+   <c>//This returns the 5th div element</c>
+  </div><br>
+  <div class="note">
+   Index number starts from 0.
+  </div>
+</div><br>
+
+
+<div class="main">
+ <div class="title">log(item)</div><br>
+  <div class="des">
+   This is similar <fc>console.log()</fc> but shortened
+  </div>
+  <br>
+  <div class="code">
+    console.log("Hello");<br>
+    <c>/*This does the same work*/</c><br>
+    log("hello");
+  </div><br>
+  <div class="note">
+   When this function is called the line number is shown as that of the library
+  </div>
+</div><br>
+<div class="main">
+<div class="title">animate(element,steps)</div><br>
+<div class="des">
+This is a function that enables the css like animation using JavaScript<br>
+The function has two parameter:<br><br>
+<i>element</i>:This is the element that is given the animation<br>
+<i>steps</i>:This is similar to keyframes in css.<br>
+</div>
+<br>
+<div class="code" id="code">
+ var elm=element(".animate");<br>
+  var animation={<br>
+  timing:1000,<br>
+  delay:100,<br>
+  from:{<br>
+   width:"100px"<br>
+  },<br>
+  to:{<br>
+   width:"200px"<br>
+  }<br>
+  }<br>
+  var key=new animate(elm,animation);<br>
+  key.start();<br>
+  <c>/*This runs the animation*/</c><br>
+  key.reset();<br>
+  <c>/*This reset the animation*/
+</div><br>
+<div class="note">
+ This function depends opon the <i>applyStyle()</i> function
+</div>
+</div><br>
+<script>
+
+</script>
+</body>
+</html>
