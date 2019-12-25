@@ -1,1 +1,304 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../style.css">
+<style>
+
+</style>
+</head>
+<body>
+
+ <div class="heading"><a href="../reference.html">«</a>Maths</div><br>
+<div class="main">
+ <div class="title">read(array,type)</div><br>
+  <div class="des">
+  This is a function that takes in an array and returns the value as specified in the type parameter
+  </div>
+  <br>
+  <div class="code">
+  v ar arr=[1,26,2,7,73];<br>
+    var sum=read(arr,"sum");<br>
+    log(sum);<br>
+    <c>/*Returns The sum (109)*/</c><br><br>
+    
+    var avg=read(arr,"avg");<br>
+    log(avg);<br>
+    <c>/*Returns the average (21.8)*/</c><br><br>
+    
+    var min=read(arr,"min");<br>
+    log(min);<br>
+    <c>/*Returns The minium number (1)*/</c><br><br>
+    
+    var max=read(arr,"max");<br>
+    log(max);<br>
+    <c>/*Returns The maximum (73)*/</c><br><br>
+    
+  </div><br>
+  <div class="note">
+   sum,avg,min and max are the type
+  </div>
+</div><br>
+<div class="main">
+<div class="title">math Object</div><br>
+<div class="des">
+ This is an object that contains math function
+</div>
+<br>
+<sub>math.random(min,max)</sub><br>
+<def>This returns a random number between the specified minimum and maximum</def><br>
+<div class="code">
+ var random=math.random(5,10);<br>
+ <c>/*Returns a random number between 5 and 10</c><br>
+</div><br>
+
+<sub>math.round(num)</sub><br>
+<def>This returns a rounded number </def><br>
+<div class="code">
+ var random=math.round(5.6);<br>
+ <c>/*Returns 6</c><br><br>
+ var random=math.round(5.2);<br>
+ <c>/*Returns 5</c><br>
+</div><br>
+
+<sub>math.distance(x1,y1,x2,y2)</sub><br>
+<def>This returns the distance between the coordinates</def><br>
+<div class="code">
+var dis=distance(2,3,4,1);<br>
+log(dis);<br>
+<c>/*This console logs the distance between the two points*/</c>
+ 
+</div><br>
+<div class="note">
+The 'math' is small caps
+</div>
+</div><br>
+ <div class="subHeading">Shapes</div><br>
+ 
+<div class="main">
+ <div class="title">triangle()</div><br>
+  <div class="des">
+   This is a object like function that returns the area, perimeter etc of the triangle
+  </div>
+  <br>
+  <div class="code">
+   var tri=new triangle();<br>
+  </div><br>
+  
+  <sub>Area</sub><br>
+   <def>This returns the area using different methods</def>
+   
+   <div class="code">
+  var tri=new triangle();<br>
+  
+  <c>/*Using herons formula*/</c><br><br>
+  var s1=10;<c>//side 1</c><br>
+  var s2=15;<c>//side 2</c><br>
+  var s3=11;<c>//side 3</c><br><br>
+  log(new tri([s1,s2,s3]).heron());
+   </div><br>
+  <div class="note">
+   This takes in an array of 3 integer
+  </div>
+</div><br>
+
+<div class="main">
+ <div class="title">square(side)</div><br>
+  <div class="des">
+   This function returns the area and perimeter of a square
+  </div>
+  <br>
+  <div class="code">
+    var sq=new square(10);<br>
+    log(sq.area());<br>
+    log(sq.perimeter())<br>
+  </div><br>
+</div><br>
+
+<div class="main">
+ <div class="title">rectangle(lenght,breadth)</div><br>
+  <div class="des">
+   This function returns the area and perimeter of a rectangle
+  </div>
+  <br>
+  <div class="code">
+    var rect=new rectangle(10,5);<br>
+    log(rect.area());<br>
+    log(rect.perimeter())<br>
+  </div><br>
+</div><br>
+
+
+<!--
+ <div class="main">
+  <div class="title"></div><br>
+   <div class="des">
+   </div>
+   <br>
+   <div class="code">
+
+   </div><br>
+   <div class="note">
+   </div>
+ </div><br>
+-->
+
+<div class="main">
+ <div class="title">circle(radius)</div><br>
+  <div class="des">
+   This function returns the maths values.
+  </div>
+  <br>
+  <div class="code">
+   var cir=new circle(30);
+  </div><br>
+   <sub>Area</sub><br>
+   <def>This returns the area of the circle</def>
+   
+<div class="code">
+var cir=new circle(30);<br><br>
+
+var ar=cir.area();<br>
+log(ar);
+<c>//ar is the area</c>
+</div>
+
+<sub>Circumfrence</sub><br>
+<def>This returns the circumfrence of the circle</def>
+
+<div class="code">
+var cir=new circle(30);<br><br>
+
+var circum=cir.circum();<br>
+log(cirum);
+<c>//ar is the circumfrence</c>
+</div><br>
+  <div class="note">
+   key word <i>circum()</i> is short for circumfrence
+  </div><br>
+  
+  <sub>sector(angle,type)</sub><br>
+  <def>This returns the area and the circumfrence of the sector with a defined angle .<br>
+  <u>Type</u><br>
+  <li>area</li>
+  <li>arc</li>
+  </def>
+  
+  <div class="code">
+  var cir=new circle(30);<br><br>
+  
+  var ar=cir.sector(60,"area");<br>
+  var arc=cir.sector(60,"arc");<br>
+  log(ar);<br>
+  <c>//ar is the area of the sector</c>
+  log(arc);<br><c>//arc is the arc of the sector</c>
+  </div><br>
+    <div class="note">The angle is in degrees</div><br>
+    
+<sub>segment(angle,type)</sub><br>
+  <def>This returns the area and the chord length of the segment with a defined angle .<br>
+<u>Type</u><br>
+<li>area</li>
+<li>chord</li>
+<div class="code">
+var cir=new circle(30);<br><br>
+
+var ar=cir.segment(60,"area");<br>
+var chord=cir.segment(60,"chord");<br>
+log(ar);<br>
+<c>//ar is the area of the segment</c>
+log(arc);<br><c>//chord is the length of chord of the segment</c>
+</div><br>
+<div class="note">
+The angle is in degrees
+</div>
+</div><br>
+
+<div class="main">
+ <div class="title">cube(side)</div><br>
+  <div class="des">
+   This function returns the Cureved Surface Area (csa) , Total Surface Area (tsa) and volume of a cube
+  </div>
+  <br>
+  <div class="code">
+    var cub=new cube(10);<br>
+    log(cub.csa());<br>
+    log(cub.tsa());<br>
+    log(cub.volume());
+  </div><br>
+</div><br>
+
+<div class="main">
+ <div class="title">cuboid(length,breadth,height)</div><br>
+  <div class="des">
+   This function returns the Cureved Surface Area (csa) , Total Surface Area (tsa) and volume of a Cuboid
+  </div>
+  <br>
+  <div class="code">
+    var cub=new cuboid(10,5,3);<br>
+    log(cub.csa());<br>
+    log(cub.tsa());<br>
+    log(cub.volume());
+  </div><br>
+</div><br>
+
+<div class="main">
+ <div class="title">cylinder(radius,height)</div><br>
+  <div class="des">
+   This function returns the Curved Surface Area (csa) , Total Surface Area (tsa) and volume of a cylinder
+  </div>
+  <br>
+  <div class="code">
+    var cub=new cylinder(5,10);<br>
+    log(cub.csa());<br>
+    log(cub.tsa());<br>
+    log(cub.volume());
+  </div><br>
+  </div><br>
+  
+  <div class="main">
+  <div class="title">cone(radius,height)</div><br>
+  <div class="des">
+  This function returns the Cureved Surface Area (csa) , Total Surface Area (tsa) and volume of a cone
+  </div>
+  <br>
+  <div class="code">
+  var cub=new cone(5,10);<br>
+  log(cub.csa());<br>
+  log(cub.tsa());<br>
+  log(cub.volume());
+  </div><br>
+  </div><br>
+  
+  <div class="main">
+  <div class="title">hemisphere(radius)</div><br>
+  <div class="des">
+  This function returns the Cureved Surface Area (csa) , Total Surface Area (tsa) and volume of a hemisphere
+  </div>
+  <br>
+  <div class="code">
+  var cub=new hemisphere(10);<br>
+  log(cub.csa());<br>
+  log(cub.tsa());<br>
+  log(cub.volume());
+  </div><br>
+  </div><br>
+  
+  <div class="main">
+  <div class="title">sphere(radius)</div><br>
+  <div class="des">
+  This function returns the Total Surface Area (tsa) and volume of a sphere.
+  </div>
+  <br>
+  <div class="code">
+  var cub=new sphere(10);<br>
+  log(cub.tsa());<br>
+  log(cub.volume());
+  </div><br>
+  </div><br>
+
+<script>
+
+</script>
+</body>
+</html>
